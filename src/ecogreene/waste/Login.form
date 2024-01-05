@@ -62,8 +62,8 @@
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="userEmail" alignment="0" min="-2" pref="99" max="-2" attributes="0"/>
-                              <Component id="userPassword" alignment="0" min="-2" pref="97" max="-2" attributes="0"/>
+                              <Component id="Email" alignment="0" min="-2" pref="99" max="-2" attributes="0"/>
+                              <Component id="Password" alignment="0" min="-2" pref="97" max="-2" attributes="0"/>
                               <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
@@ -94,11 +94,11 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" pref="25" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                  <Component id="userEmail" min="-2" max="-2" attributes="0"/>
+                  <Component id="Email" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="email" min="-2" pref="30" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="userPassword" min="-2" max="-2" attributes="0"/>
+                  <Component id="Password" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="password" min="-2" pref="30" max="-2" attributes="0"/>
                   <EmptySpace pref="65" max="32767" attributes="0"/>
@@ -137,7 +137,7 @@
             <Property name="text" type="java.lang.String" value="Let&#x2019;s login for explore continues"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="userEmail">
+        <Component class="javax.swing.JLabel" name="Email">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Helvetica Neue" size="15" style="1"/>
@@ -158,7 +158,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="emailActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="userPassword">
+        <Component class="javax.swing.JLabel" name="Password">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Helvetica Neue" size="15" style="1"/>

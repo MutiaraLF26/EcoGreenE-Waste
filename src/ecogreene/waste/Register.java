@@ -30,13 +30,12 @@ public class Register extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         emailAddress = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
-        fname = new javax.swing.JLabel();
+        name = new javax.swing.JLabel();
         fpassword = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
         SignUpBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(360, 650));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(360, 650));
@@ -69,8 +68,8 @@ public class Register extends javax.swing.JFrame {
             }
         });
 
-        fname.setFont(new java.awt.Font("Helvetica Neue", 1, 15)); // NOI18N
-        fname.setText("Name");
+        name.setFont(new java.awt.Font("Helvetica Neue", 1, 15)); // NOI18N
+        name.setText("Name");
 
         fpassword.setFont(new java.awt.Font("Helvetica Neue", 1, 15)); // NOI18N
         fpassword.setText("Password");
@@ -99,7 +98,7 @@ public class Register extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(fname, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(name, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(emailAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(jTextField1)
@@ -122,7 +121,7 @@ public class Register extends javax.swing.JFrame {
                 .addGap(36, 36, 36)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(fname)
+                .addComponent(name)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -206,7 +205,6 @@ public class Register extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton SignUpBtn;
     private javax.swing.JLabel emailAddress;
-    private javax.swing.JLabel fname;
     private javax.swing.JLabel fpassword;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel6;
@@ -215,5 +213,6 @@ public class Register extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JLabel name;
     // End of variables declaration//GEN-END:variables
 }

@@ -27,9 +27,9 @@ public class Login extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        userEmail = new javax.swing.JLabel();
+        Email = new javax.swing.JLabel();
         email = new javax.swing.JTextField();
-        userPassword = new javax.swing.JLabel();
+        Password = new javax.swing.JLabel();
         password = new javax.swing.JTextField();
         LoginBtn = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
@@ -49,8 +49,8 @@ public class Login extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Helvetica Neue", 0, 11)); // NOI18N
         jLabel2.setText("Let’s login for explore continues");
 
-        userEmail.setFont(new java.awt.Font("Helvetica Neue", 1, 15)); // NOI18N
-        userEmail.setText("Email");
+        Email.setFont(new java.awt.Font("Helvetica Neue", 1, 15)); // NOI18N
+        Email.setText("Email");
 
         email.setText("example@gmail.com");
         email.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -60,8 +60,8 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        userPassword.setFont(new java.awt.Font("Helvetica Neue", 1, 15)); // NOI18N
-        userPassword.setText("Password");
+        Password.setFont(new java.awt.Font("Helvetica Neue", 1, 15)); // NOI18N
+        Password.setText("Password");
 
         password.setText("**********");
         password.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -94,8 +94,8 @@ public class Login extends javax.swing.JFrame {
                         .addGap(36, 36, 36))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(userEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(userPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Email, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Password, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2)
                             .addComponent(jLabel1)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -119,11 +119,11 @@ public class Login extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
-                .addComponent(userEmail)
+                .addComponent(Email)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(email, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(userPassword)
+                .addComponent(Password)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
@@ -196,7 +196,9 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Email;
     private javax.swing.JButton LoginBtn;
+    private javax.swing.JLabel Password;
     private javax.swing.JTextField email;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
@@ -205,7 +207,5 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField password;
-    private javax.swing.JLabel userEmail;
-    private javax.swing.JLabel userPassword;
     // End of variables declaration//GEN-END:variables
 }
