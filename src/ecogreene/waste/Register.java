@@ -10,9 +10,6 @@ package ecogreene.waste;
  */
 public class Register extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Register
-     */
     public Register() {
         initComponents();
     }
