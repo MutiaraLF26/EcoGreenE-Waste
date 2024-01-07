@@ -3,7 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Asus/NetBeansProjects/EcoGreenE-Waste/src/db/MySqlConnection.java</file>
+            <file>file:/C:/Users/Asus/NetBeansProjects/EcoGreenE-Waste/src/ecogreene/waste/Register.java</file>
+            <file>file:/C:/Users/Asus/NetBeansProjects/EcoGreenE-Waste/src/ecogreene/waste/EcoGreenEWaste.java</file>
+            <file>file:/C:/Users/Asus/NetBeansProjects/EcoGreenE-Waste/src/ecogreene/waste/Login.java</file>
+            <file>file:/C:/Users/Asus/NetBeansProjects/EcoGreenE-Waste/src/ecogreene/waste/Profile.java</file>
         </group>
     </open-files>
 </project-private>

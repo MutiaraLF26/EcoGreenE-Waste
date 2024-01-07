@@ -147,7 +147,7 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -192,9 +192,9 @@ public class Login extends javax.swing.JFrame {
          //System.out.println("Sign Up btn Clicked");
         String Email,Password,query,passDb = null;
         String SUrl,SUser,SPass;
-          SUrl = "jdbc:MySQL://localhost:8889/EcoGreen";
+          SUrl = "jdbc:mysql://localhost:3306/ecogreen";
           SUser = "root";
-          SPass = "root";
+          SPass = "";
           int notFound = 0;
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");

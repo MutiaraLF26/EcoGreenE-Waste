@@ -174,9 +174,9 @@ public class Register extends javax.swing.JFrame {
         //System.out.println("Sign Up btn Clicked");
         String email,password,query;
         String SUrl,SUser,SPass;
-          SUrl = "jdbc:MySQL://localhost:8889/EcoGreen";
+          SUrl = "jdbc:mysql://localhost:3306/ecogreen";
           SUser = "root";
-          SPass = "root";
+          SPass = "";
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(SUrl,SUser,SPass);
