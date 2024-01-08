@@ -238,18 +238,13 @@ public class ProfileUser extends javax.swing.JPanel {
 
     private void buttonBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonBackActionPerformed
         // TODO add your handling code here:
-       Dashboard DashboardFrame = new Dashboard();
-       DashboardFrame.setVisible(true);
-       DashboardFrame.pack();
-       DashboardFrame.setLocationRelativeTo(null);
+        Dashboard DashboardFrame = new Dashboard();
+        DashboardFrame.setVisible(true);
+//        this.dispose();
     }//GEN-LAST:event_buttonBackActionPerformed
 
     private void jButtonEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEditActionPerformed
         // TODO add your handling code here:
-       EditUser EditFrame = new EditUser();
-       EditFrame.setVisible(true);
-       EditFrame.pack();
-       EditFrame.setLocationRelativeTo(null);
     }//GEN-LAST:event_jButtonEditActionPerformed
 
 

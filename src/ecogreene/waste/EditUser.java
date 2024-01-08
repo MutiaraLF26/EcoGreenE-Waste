@@ -153,6 +153,11 @@ public class EditUser extends javax.swing.JFrame {
         buttonSimpanPerubahan.setFont(new java.awt.Font("Bahnschrift", 1, 20)); // NOI18N
         buttonSimpanPerubahan.setForeground(new java.awt.Color(0, 0, 0));
         buttonSimpanPerubahan.setText("SAVE");
+        buttonSimpanPerubahan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonSimpanPerubahanActionPerformed(evt);
+            }
+        });
 
         jTextFieldName.setBackground(new java.awt.Color(153, 255, 153));
         jTextFieldName.setForeground(new java.awt.Color(0, 0, 0));
@@ -268,11 +273,9 @@ public class EditUser extends javax.swing.JFrame {
 
     private void buttonBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonBackActionPerformed
         // TODO add your handling code here:
-       profileUser ProfileFrame = new profileUser();
-       ProfileFrame.setVisible(true);
-//       ProfileFrame.pack();
-//       ProfileFrame.setLocationRelativeTo(null);
-       this.dispose();
+        ProfileUser ProfileFrame = new ProfileUser();
+        ProfileFrame.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_buttonBackActionPerformed
 
     private void jTextFieldEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldEmailActionPerformed
@@ -290,6 +293,10 @@ public class EditUser extends javax.swing.JFrame {
     private void jTextFieldNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldNameActionPerformed
+
+    private void buttonSimpanPerubahanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSimpanPerubahanActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonSimpanPerubahanActionPerformed
 
     /**
      * @param args the command line arguments

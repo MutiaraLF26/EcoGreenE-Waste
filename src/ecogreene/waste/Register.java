@@ -58,11 +58,6 @@ public class Register extends javax.swing.JFrame {
 
         emailAddress.setText("example@gmail.com");
         emailAddress.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        emailAddress.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                emailAddressActionPerformed(evt);
-            }
-        });
 
         jLabel4.setFont(new java.awt.Font("Helvetica Neue", 1, 15)); // NOI18N
         jLabel4.setText("Password");
@@ -181,16 +176,13 @@ public class Register extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void emailAddressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailAddressActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_emailAddressActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
        Login LoginFrame = new Login();
        LoginFrame.setVisible(true);
        LoginFrame.pack();
        LoginFrame.setLocationRelativeTo(null);
+       this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -205,6 +197,7 @@ public class Register extends javax.swing.JFrame {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(SUrl,SUser,SPass);
             Statement st = con.createStatement();
+            
              if("".equals(fname.getText())){
                     JOptionPane.showMessageDialog(new JFrame(), "Username is required", "Error ",
                             JOptionPane.ERROR_MESSAGE);
@@ -219,7 +212,7 @@ public class Register extends javax.swing.JFrame {
                     email = emailAddress.getText();
                     password = fpassword.getText();
                     System.out.println(password );
-                    
+                                    
                     query = "INSERT INTO user(name,email,password)"+
                             "VALUES ('" + name + "' ,'" + email + "','" + password + "')";
                     
