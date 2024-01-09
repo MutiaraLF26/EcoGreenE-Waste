@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package ecogreene.waste;
+package EcoGreen;
 
 /**
  *
@@ -239,17 +239,17 @@ public class ProfileUser extends javax.swing.JPanel {
 
     private void buttonBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonBackActionPerformed
         // TODO add your handling code here:
-        Dashboard DashboardFrame = new Dashboard();
-        DashboardFrame.setVisible(true);
+//        Dashboard DashboardFrame = new Dashboard();
+//        DashboardFrame.setVisible(true);
 //        this.dispose();
     }//GEN-LAST:event_buttonBackActionPerformed
 
     private void jButtonEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEditActionPerformed
         // TODO add your handling code here:
-        EditUser EditFrame = new EditUser();
-        EditFrame.setVisible(true);
-        EditFrame.pack();
-        EditFrame.setLocationRelativeTo(null);
+//        EditUser EditFrame = new EditUser();
+//        EditFrame.setVisible(true);
+//        EditFrame.pack();
+//        EditFrame.setLocationRelativeTo(null);
 //        this.dispose();
         
     }//GEN-LAST:event_jButtonEditActionPerformed
