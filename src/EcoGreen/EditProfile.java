@@ -252,31 +252,35 @@ public class EditProfile extends javax.swing.JFrame {
             SUser = "root";
             SPass = "";
             int notFound = 0;
-
+            User user = new User();
+            user.setName(jTextField1.getText());
+            user.setEmail(jTextField2.getText());
+            user.setAlamat(jTextField3.getText());
+            user.setTgl_lahir(jTextField4.getText());
+            user.setId();
             try (Connection connection = MySqlConnection.getInstance().getConnection()) {
                 // Membuat PreparedStatement untuk mengubah data di database
                 PreparedStatement statement = connection.prepareStatement(
-                    "update ecogreen set name = ?, email = ?, alamat = ?, tgl_lahir = ? where id = ?");
+                    "update pp2_tubes set username = ?, email = ?, alamat = ?, tgl_lahir = ? where id = ?");
 
                 // Set nilai dari parameter yang ada di query
-                statement.setString(1, User.getName());
-                statement.setString(2, User.getEmail());
-                statement.setString(3, User.getAlamat());
-                statement.setString(4, User.getTgl_lahir());
-                statement.setString(5, User.getId());
+                statement.setString(1, user.getName());
+                statement.setString(2, user.getEmail());
+                statement.setString(3, user.getAlamat());
+                statement.setString(4, user.getTgl_lahir());
+                statement.setString(5, user.getId());
 
                 // Eksekusi query
                 result = statement.executeUpdate();
 
                 // Print data yang diubah di database
-                System.out.println("Update data: " + User.getId() + " " + User.getName() + " "
-                    + User.getEmail() + " " + User.getAlamat() + " " + User.getTgl_lahir());
+                 System.out.println("Update data: " + user.getId() + " " + user.getName() + " "
+            + user.getEmail() + " " + user.getAlamat() + " " + user.getTgl_lahir());
 
             } catch (SQLException e) {
                 // Print error jika terjadi error
                 e.printStackTrace();
             }
-            return result;
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

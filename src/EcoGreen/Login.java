@@ -192,7 +192,7 @@ public class Login extends javax.swing.JFrame {
         //System.out.println("Sign Up btn Clicked");
         String Email,Password,query,passDb = null;
         String SUrl,SUser,SPass;
-          SUrl = "jdbc:mysql://localhost:3306/ecogreen";
+          SUrl = "jdbc:mysql://localhost:3306/pp2_tubes";
           SUser = "root";
           SPass = "";
           int notFound = 0;
