@@ -226,6 +226,11 @@ public class Register extends javax.swing.JFrame {
                 System.out.println("Error" + e.getMessage());
             
         }
+        Dashboard DashboardFrame = new Dashboard();
+        DashboardFrame.setVisible(true);
+        DashboardFrame.pack();
+        DashboardFrame.setLocationRelativeTo(null);
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void fnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fnameActionPerformed

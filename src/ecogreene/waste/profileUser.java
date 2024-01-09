@@ -245,6 +245,12 @@ public class ProfileUser extends javax.swing.JPanel {
 
     private void jButtonEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEditActionPerformed
         // TODO add your handling code here:
+        EditUser EditFrame = new EditUser();
+        EditFrame.setVisible(true);
+        EditFrame.pack();
+        EditFrame.setLocationRelativeTo(null);
+//        this.dispose();
+        
     }//GEN-LAST:event_jButtonEditActionPerformed
 
 

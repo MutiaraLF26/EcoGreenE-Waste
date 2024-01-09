@@ -241,6 +241,11 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        ProfileUser ProfileFrame = new ProfileUser();
+        ProfileFrame.setVisible(true);
+//        ProfileFrame.pack();
+//        ProfileFrame.setLocationRelativeTo(null);
+//        this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
