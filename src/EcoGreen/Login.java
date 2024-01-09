@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package ecogreene.waste;
+package EcoGreen;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -50,7 +50,6 @@ public class Login extends javax.swing.JFrame {
         password = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(360, 650));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(360, 650));
@@ -189,10 +188,7 @@ public class Login extends javax.swing.JFrame {
 
     private void buttonSignInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSignInActionPerformed
         // TODO add your handling code here:
-        Dashboard DashboardFrame = new Dashboard();
-        DashboardFrame.setVisible(true);
-        this.dispose();
-        
+              
         //System.out.println("Sign Up btn Clicked");
         String Email,Password,query,passDb = null;
         String SUrl,SUser,SPass;
@@ -204,6 +200,7 @@ public class Login extends javax.swing.JFrame {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(SUrl,SUser,SPass);
             Statement st = con.createStatement();
+            
              if ("".equals(email.getText())){
                     JOptionPane.showMessageDialog(new JFrame(), "Email Address is required", "Error ",
                             JOptionPane.ERROR_MESSAGE);
@@ -221,11 +218,10 @@ public class Login extends javax.swing.JFrame {
                         notFound = 1;
                     }
                     if(notFound == 1 && Password.equals(passDb)){
-                        
-                        Profile ProfileFrame = new Profile();
-                        ProfileFrame.setVisible(true);
-                        ProfileFrame.pack();
-                        ProfileFrame.setLocationRelativeTo(null);
+                        Dashboard DashboardFrame = new Dashboard();
+                        DashboardFrame.setVisible(true);
+                        DashboardFrame.pack();
+                        DashboardFrame.setLocationRelativeTo(null);
                         this.dispose();
                     }else{
                         JOptionPane.showMessageDialog(new JFrame(), "Incorrect Email or Password", "Error ",
@@ -236,7 +232,6 @@ public class Login extends javax.swing.JFrame {
                     password.setText("");                }
         }catch (Exception e){
                 System.out.println("Error" + e.getMessage());
-            
         }
     }//GEN-LAST:event_buttonSignInActionPerformed
 
