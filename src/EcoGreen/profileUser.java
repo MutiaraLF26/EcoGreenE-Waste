@@ -239,18 +239,18 @@ public class ProfileUser extends javax.swing.JPanel {
 
     private void buttonBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonBackActionPerformed
         // TODO add your handling code here:
-//        Dashboard DashboardFrame = new Dashboard();
-//        DashboardFrame.setVisible(true);
-//        this.dispose();
+        Dashboard DashboardFrame = new Dashboard();
+        DashboardFrame.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_buttonBackActionPerformed
 
     private void jButtonEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEditActionPerformed
         // TODO add your handling code here:
-//        EditUser EditFrame = new EditUser();
-//        EditFrame.setVisible(true);
-//        EditFrame.pack();
-//        EditFrame.setLocationRelativeTo(null);
-//        this.dispose();
+        EditUser EditFrame = new EditUser();
+        EditFrame.setVisible(true);
+        EditFrame.pack();
+        EditFrame.setLocationRelativeTo(null);
+        this.dispose();
         
     }//GEN-LAST:event_jButtonEditActionPerformed
 
@@ -275,4 +275,8 @@ public class ProfileUser extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
+
+    private void dispose() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

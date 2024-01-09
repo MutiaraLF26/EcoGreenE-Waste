@@ -190,7 +190,7 @@ public class Register extends javax.swing.JFrame {
         //System.out.println("Sign Up btn Clicked");
         String name,email,password,query;
         String SUrl,SUser,SPass;
-          SUrl = "jdbc:mysql://localhost:3306/ecogreen";
+          SUrl = "jdbc:mysql://localhost:3306/pp2_tubes";
           SUser = "root";
           SPass = "";
         try{
@@ -213,7 +213,7 @@ public class Register extends javax.swing.JFrame {
                     password = fpassword.getText();
                     System.out.println(password );
                                     
-                    query = "INSERT INTO user(name,email,password)"+
+                    query = "INSERT INTO user(username,email,password)"+
                             "VALUES ('" + name + "' ,'" + email + "','" + password + "')";
                     
                     st.execute(query);
