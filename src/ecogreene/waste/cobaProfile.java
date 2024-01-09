@@ -8,12 +8,12 @@ package ecogreene.waste;
  *
  * @author sharnplmb
  */
-public class profileUser extends javax.swing.JPanel {
+public class cobaProfile extends javax.swing.JPanel {
 
     /**
      * Creates new form percobaanSharen
      */
-    public profileUser() {
+    public cobaProfile() {
         initComponents();
     }
 
@@ -107,7 +107,6 @@ public class profileUser extends javax.swing.JPanel {
         jButton1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("< Back");
-        jButton1.setActionCommand("< Back");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
