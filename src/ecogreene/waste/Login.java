@@ -201,6 +201,7 @@ public class Login extends javax.swing.JFrame {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(SUrl,SUser,SPass);
             Statement st = con.createStatement();
+            
              if ("".equals(email.getText())){
                     JOptionPane.showMessageDialog(new JFrame(), "Email Address is required", "Error ",
                             JOptionPane.ERROR_MESSAGE);
@@ -218,11 +219,10 @@ public class Login extends javax.swing.JFrame {
                         notFound = 1;
                     }
                     if(notFound == 1 && Password.equals(passDb)){
-                        
-                        Profile ProfileFrame = new Profile();
-                        ProfileFrame.setVisible(true);
-                        ProfileFrame.pack();
-                        ProfileFrame.setLocationRelativeTo(null);
+                        Dashboard DashboardFrame = new Dashboard();
+                        DashboardFrame.setVisible(true);
+                        DashboardFrame.pack();
+                        DashboardFrame.setLocationRelativeTo(null);
                         this.dispose();
                     }else{
                         JOptionPane.showMessageDialog(new JFrame(), "Incorrect Email or Password", "Error ",
@@ -233,13 +233,7 @@ public class Login extends javax.swing.JFrame {
                     password.setText("");                }
         }catch (Exception e){
                 System.out.println("Error" + e.getMessage());
-            
         }
-        Dashboard DashboardFrame = new Dashboard();
-        DashboardFrame.setVisible(true);
-        DashboardFrame.pack();
-        DashboardFrame.setLocationRelativeTo(null);
-        this.dispose();
     }//GEN-LAST:event_buttonSignInActionPerformed
 
     private void passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordActionPerformed
