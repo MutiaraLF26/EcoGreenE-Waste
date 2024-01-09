@@ -189,10 +189,7 @@ public class Login extends javax.swing.JFrame {
 
     private void buttonSignInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSignInActionPerformed
         // TODO add your handling code here:
-        Dashboard DashboardFrame = new Dashboard();
-        DashboardFrame.setVisible(true);
-        this.dispose();
-        
+              
         //System.out.println("Sign Up btn Clicked");
         String Email,Password,query,passDb = null;
         String SUrl,SUser,SPass;
@@ -238,6 +235,11 @@ public class Login extends javax.swing.JFrame {
                 System.out.println("Error" + e.getMessage());
             
         }
+        Dashboard DashboardFrame = new Dashboard();
+        DashboardFrame.setVisible(true);
+        DashboardFrame.pack();
+        DashboardFrame.setLocationRelativeTo(null);
+        this.dispose();
     }//GEN-LAST:event_buttonSignInActionPerformed
 
     private void passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordActionPerformed

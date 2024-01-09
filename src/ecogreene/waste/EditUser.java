@@ -296,6 +296,11 @@ public class EditUser extends javax.swing.JFrame {
 
     private void buttonSimpanPerubahanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSimpanPerubahanActionPerformed
         // TODO add your handling code here:
+        ProfileUser ProfileFrame = new ProfileUser();
+        ProfileFrame.setVisible(true);
+//        ProfileFrame.pack();
+//        ProfileFrame.setLocationRelativeTo(null);
+//        this.dispose();
     }//GEN-LAST:event_buttonSimpanPerubahanActionPerformed
 
     /**
