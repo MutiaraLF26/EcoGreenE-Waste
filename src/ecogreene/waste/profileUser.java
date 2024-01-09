@@ -8,6 +8,7 @@ package ecogreene.waste;
  *
  * @author sharnplmb
  */
+
 public class ProfileUser extends javax.swing.JPanel {
 
     /**
