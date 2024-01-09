@@ -58,11 +58,6 @@ public class Register extends javax.swing.JFrame {
 
         emailAddress.setText("example@gmail.com");
         emailAddress.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        emailAddress.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                emailAddressActionPerformed(evt);
-            }
-        });
 
         jLabel4.setFont(new java.awt.Font("Helvetica Neue", 1, 15)); // NOI18N
         jLabel4.setText("Password");
@@ -158,7 +153,7 @@ public class Register extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2))
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -181,22 +176,19 @@ public class Register extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void emailAddressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailAddressActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_emailAddressActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
        Login LoginFrame = new Login();
        LoginFrame.setVisible(true);
        LoginFrame.pack();
        LoginFrame.setLocationRelativeTo(null);
+       this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         //System.out.println("Sign Up btn Clicked");
-        String Name,Email,Password,query;
+        String name,email,password,query;
         String SUrl,SUser,SPass;
           SUrl = "jdbc:mysql://localhost:3306/ecogreen";
           SUser = "root";
@@ -205,8 +197,9 @@ public class Register extends javax.swing.JFrame {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(SUrl,SUser,SPass);
             Statement st = con.createStatement();
+            
              if("".equals(fname.getText())){
-                    JOptionPane.showMessageDialog(new JFrame(), "Name is required", "Error ",
+                    JOptionPane.showMessageDialog(new JFrame(), "Username is required", "Error ",
                             JOptionPane.ERROR_MESSAGE);
                 }else if ("".equals(emailAddress.getText())){
                     JOptionPane.showMessageDialog(new JFrame(), "Email Address is required", "Error ",
@@ -215,13 +208,13 @@ public class Register extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(new JFrame(), "Password is required", "Error ",
                             JOptionPane.ERROR_MESSAGE);
                 }else {
-                    Name = fname.getText();
-                    Email = emailAddress.getText();
-                    Password = fpassword.getText();
-                    System.out.println(Password );
-                    
+                    name = fname.getText();
+                    email = emailAddress.getText();
+                    password = fpassword.getText();
+                    System.out.println(password );
+                                    
                     query = "INSERT INTO user(name,email,password)"+
-                            "VALUES ('" + Name + "' ,'" + Email + "','" + Password + "')";
+                            "VALUES ('" + name + "' ,'" + email + "','" + password + "')";
                     
                     st.execute(query);
                     fname.setText("");

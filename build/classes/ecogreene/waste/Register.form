@@ -113,11 +113,7 @@
                       <Component id="jLabel8" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                       <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-<<<<<<< HEAD
                   <EmptySpace pref="43" max="32767" attributes="0"/>
-=======
-                  <EmptySpace pref="36" max="32767" attributes="0"/>
->>>>>>> f7073b23971f56b8a9a7ced7cd183a465bf9401e
               </Group>
           </Group>
         </DimensionLayout>
