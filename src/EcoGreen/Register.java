@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package ecogreene.waste;
+package EcoGreen;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -226,6 +226,11 @@ public class Register extends javax.swing.JFrame {
                 System.out.println("Error" + e.getMessage());
             
         }
+        Dashboard DashboardFrame = new Dashboard();
+        DashboardFrame.setVisible(true);
+        DashboardFrame.pack();
+        DashboardFrame.setLocationRelativeTo(null);
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void fnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fnameActionPerformed
