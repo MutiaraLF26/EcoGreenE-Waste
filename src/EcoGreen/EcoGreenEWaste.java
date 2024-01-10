@@ -15,7 +15,7 @@ public class EcoGreenEWaste {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-       Login LoginFrame = new Login();
+       Dashboard LoginFrame = new Dashboard();
        LoginFrame.setVisible(true);
        LoginFrame.pack();
        LoginFrame.setLocationRelativeTo(null);
